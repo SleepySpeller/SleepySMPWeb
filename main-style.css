@@ -1,0 +1,136 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: rgba(33, 47, 61, 1);
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar > a, .navbar > h1 {
+    margin: 0px;
+    padding: 24px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bg {
+    background-image: url("resource/background.png");
+    background-clip: unset;
+}
+
+.main {
+    padding: 24px;
+    color: white;
+    font-size: 24px;
+}
+
+.main > .right {
+    position: absolute;
+    right: 14px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.thin-header {
+    font-size: 64px;
+    font-weight: 100;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    font-weight: 100;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 10em 10em 10em;
+}
+
+.card-grid > div {
+    padding: 1rem;
+    color: white;
+    border-radius: 14px;
+}
+
+.bg-green {
+    background-color: rgb(171, 235, 198);
+}
+
+.bg-red {
+    background-color: rgb(245, 183, 177);
+}
+
+.bg-yellow {
+    background-color: rgb(249, 231, 159);
+}
+
+.bg-blue {
+    background-color: rgb(174, 214, 241);
+}
+
+.bg-violet {
+    background-color: rgb(215, 189, 226);
+}
+
+.button-join {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    font-size: 24px;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+}
+
+/* === MEDIA === */
+
+/* Wide Size */
+@media only screen and (min-width: 1500px) {
+    .card-grid {
+        font-size: inherit;
+    }
+}
+
+/* Small Size */
+@media only screen and (max-width: 1400px) {
+    .main {
+        font-size: 18px;
+    }
+}
+
+/* Smallest Size */
+@media only screen and (max-width: 600px) {
+    .main {
+        font-size: 10px;
+    }
+}
