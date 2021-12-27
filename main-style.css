@@ -134,3 +134,12 @@ html, body, h1 {
         font-size: 10px;
     }
 }
+
+.abouttext{
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    flex-flow: row;
+    position: sticky;
+    top: 0px
+}
